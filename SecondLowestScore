@@ -4,12 +4,11 @@ if __name__ == '__main__':
         name = input()
         score = float(input())
         arr.append([name,score])
-    arr.sort(key= lambda x : x[1])
-    secLow = arr[-2][1]
-    nameSort = sorted(arr, key= lambda x : x[0])
-    for name, score in nameSort:
-        if score == secLow:
-            print(name)
+    scores = sorted(set([score for name, score in arr]))
+    names = sorted([name for name, score in arr if score == scores[1]])
+    for name in names:
+        print(name)
+
 
     
     
