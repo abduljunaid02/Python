@@ -1,10 +1,5 @@
 import numpy as np
 
-inp = map(int, input().split())
-arr = []
-for num in inp:
-    arr.append(num)
-print(arr)
-nparr = np.array(arr)
-print(nparr.shape)
+inp = list(map(int, input().split()))
+nparr = np.array(inp)
 print(nparr.reshape(3,3))
