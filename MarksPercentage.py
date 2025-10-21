@@ -12,3 +12,4 @@ if __name__ == '__main__':
     for i in range(len(arrscore)):
         avgScore = avgScore + arrscore[i]
     print("%.2f" %float(avgScore/3))
+    print("Here is a change to be made")
